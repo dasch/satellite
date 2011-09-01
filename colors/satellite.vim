@@ -12,8 +12,7 @@ if version > 580
 endif
 let g:colors_name="satellite"
 
-"hi Normal    guifg=#ddddcc guibg=#1B1814 gui=none
-hi Normal    guifg=#ddddcc guibg=#0B0804 gui=none
+hi Normal    guifg=#ddddcc guibg=#080804 gui=none
 
 " highlight groups
 hi Cursor       guifg=black           guibg=yellow   gui=none
@@ -22,7 +21,7 @@ hi VertSplit    guifg=gray40          guibg=gray40   gui=none
 hi Folded       guifg=grey            guibg=grey30   gui=none
 hi FoldColumn   guifg=tan             guibg=grey30   gui=none
 hi IncSearch    guifg=#b0ffff         guibg=#2050d0
-hi LineNr       guifg=#202025         gui=none
+hi LineNr       guifg=#202025      gui=none
 hi ModeMsg      guifg=SkyBlue         gui=none
 hi MoreMsg      guifg=SeaGreen        gui=none
 hi NonText      guifg=cyan            gui=none
@@ -64,7 +63,7 @@ if has("spell")
 endif
 
 hi Keyword      guifg=#CDA869
-hi Comment      guifg=#5B5E66     gui=none
+hi Comment      guifg=#979DAC     gui=none
 hi Number       guifg=#A4C260
 hi Constant     guifg=white         gui=none
 hi Identifier   guifg=white
@@ -79,6 +78,7 @@ hi Boolean      guifg=#AA88AA
 hi Ignore       guifg=grey40          gui=none
 hi Todo         guibg=#EEEE33 guifg=black gui=bold
 hi String       guifg=#8F9D6A
+"hi String       guifg=#A4C260
 hi SignColumn   guibg=#0B0804 gui=none
 hi ShowMarksHLl guifg=lightgoldenrod2 guibg=#151207
 
@@ -86,8 +86,6 @@ hi link Operator Special
 hi link Structure Special
 hi link StorageClass Special
 
-" TODO
-hi Tag          gui=underline
 
 " color terminal definitions
 hi SpecialKey   ctermfg=darkgreen
@@ -121,13 +119,13 @@ hi Identifier   ctermfg=6
 hi Statement    ctermfg=3
 hi PreProc      ctermfg=5
 hi Type         ctermfg=2
-hi Underlined   cterm=underline      ctermfg=5
 hi Ignore       ctermfg=darkgrey
 hi Error        cterm=bold           ctermfg=7        ctermbg=1
 
 
 " Ruby
-hi link rubySymbol    Character
+"hi rubySymbol         guifg=#DDF2A4
+hi link rubySymbol Character
 hi rubyConstant       guifg=white
 
 
@@ -141,6 +139,8 @@ hi railsClass guifg=white
 hi htmlArg       guifg=lightgoldenrod2
 hi htmlTag       guifg=lightgoldenrod2
 hi htmlEndTag    guifg=lightgoldenrod2
+hi htmlLink gui=NONE
+hi htmlH1       gui=bold
 
 
 " PHP
