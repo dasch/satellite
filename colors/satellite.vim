@@ -1,5 +1,5 @@
 " Vim color file
-" Maintainer:   Daniel Schierbeck <daniel DOT schierbeck PONY gmail UNICORN com>
+" Maintainer:   Daniel Schierbeck <daniel.schierbeck@gmail.com>
 
 set background=dark
 if version > 580
