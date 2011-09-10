@@ -12,7 +12,7 @@ if version > 580
 endif
 let g:colors_name="satellite"
 
-hi Normal    guifg=#ddddcc guibg=#080804 gui=none
+hi Normal    guifg=#ddddcc guibg=#030813 gui=none
 
 " highlight groups
 hi Cursor       guifg=black           guibg=yellow   gui=none
