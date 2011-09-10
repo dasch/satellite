@@ -65,14 +65,14 @@ endif
 hi Keyword      guifg=#CDA869
 hi Comment      guifg=#979DAC     gui=none
 hi Number       guifg=#A4C260
-hi Constant     guifg=white         gui=none
-hi Identifier   guifg=white
-hi Function     guifg=white           gui=none
+hi Constant     guifg=#EEEEDD         gui=none
+hi Identifier   guifg=#EEEEDD
+hi Function     guifg=#EEEEDD           gui=none
+hi Type         guifg=#EEEEDD           gui=none
 hi Statement    guifg=#CDA869 gui=none
 hi Delimiter    guifg=#997744
 hi PreProc      guifg=lightgoldenrod2 gui=none
 hi Special      guifg=#CDA869         gui=none
-hi Type         guifg=white           gui=none
 hi Character    guifg=#DDF2A4
 hi Boolean      guifg=#AA88AA
 hi Ignore       guifg=grey40          gui=none
@@ -126,13 +126,13 @@ hi Error        cterm=bold           ctermfg=7        ctermbg=1
 " Ruby
 "hi rubySymbol         guifg=#DDF2A4
 hi link rubySymbol Character
-hi rubyConstant       guifg=white
+hi link rubyConstant Normal
 
 
 " Rails
 hi link railsStringSpecial rubySymbol
 hi railsMethod guifg=#CDA869
-hi railsClass guifg=white
+hi link railsClass Normal
 
 
 " HTML
