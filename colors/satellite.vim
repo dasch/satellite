@@ -21,7 +21,7 @@ hi VertSplit    guifg=gray40          guibg=gray40   gui=none
 hi Folded       guifg=grey            guibg=grey30   gui=none
 hi FoldColumn   guifg=tan             guibg=grey30   gui=none
 hi IncSearch    guifg=#b0ffff         guibg=#2050d0
-hi LineNr       guifg=#202025      gui=none
+hi LineNr       guifg=#303040      gui=none
 hi ModeMsg      guifg=SkyBlue         gui=none
 hi MoreMsg      guifg=SeaGreen        gui=none
 hi NonText      guifg=cyan            gui=none
