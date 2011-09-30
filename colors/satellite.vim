@@ -28,8 +28,8 @@ hi NonText      guifg=cyan            gui=none
 hi Question     guifg=springgreen     gui=none
 hi Search       guifg=gray80          guibg=#445599  gui=none
 hi SpecialKey   guifg=cyan            gui=none
-hi StatusLine   guifg=black           guibg=#909090  gui=bold
-hi StatusLineNC guifg=white           guibg=#101010   gui=none
+hi StatusLine   guifg=white           guibg=#202030  gui=bold
+hi StatusLineNC guifg=white           guibg=#030813   gui=none
 hi TabLine      guibg=#261d13         guifg=#aaa  gui=underline,bold
 hi TabLineFill  guibg=#261d13         guifg=#aaa  gui=underline
 hi TabLineSel   guibg=bg              guifg=#f7f7f1  gui=bold
