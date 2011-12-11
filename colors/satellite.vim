@@ -42,18 +42,11 @@ hi PmenuSel     guifg=bg              guibg=#c0aa94  gui=none
 hi PmenuThumb   guifg=bg              guibg=#f7f7f1  gui=none
 hi WildMenu     guifg=gray            guibg=gray17   gui=none
 hi MatchParen   guifg=white           guibg=skyblue4 gui=bold
-hi DiffAdd      guifg=black           guibg=wheat1
-hi DiffChange   guifg=black           guibg=skyblue1
-hi DiffText     guifg=black           guibg=hotpink1 gui=none
-hi DiffDelete   guibg=gray45          guifg=black    gui=none
+hi ColorColumn                        guibg=#131823
 
 
-" Real diff
-hi DiffAdded    guifg=#4b4
-hi DiffRemoved  guifg=#f77
-
-hi DiffDelete   guibg=#FF0000
-hi DiffChange   guibg=#CB8FFF
+hi DiffAdded    guifg=#8F9D6A
+hi DiffRemoved  guifg=salmon
 
 if has("spell")
     hi SpellBad   guisp=#f07070 gui=undercurl
@@ -136,11 +129,18 @@ hi link railsClass Normal
 
 
 " HTML
-hi htmlArg       guifg=lightgoldenrod2
-hi htmlTag       guifg=lightgoldenrod2
-hi htmlEndTag    guifg=lightgoldenrod2
+hi htmlTagName    guifg=#555577
+hi link htmlArg htmlTagName
+hi link htmlTag htmlTagName
+hi link htmlEndTag htmlTagName
 hi htmlLink gui=NONE
 hi htmlH1       gui=bold
+
+
+" Mustache
+hi mustacheMarker guifg=#885555
+hi mustacheVariable guifg=#FFFFFF
+hi mustacheSection guifg=#888888
 
 
 " PHP
