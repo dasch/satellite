@@ -16,6 +16,7 @@ hi Normal    guifg=#ddddcc guibg=#030813 gui=none
 
 " highlight groups
 hi Cursor       guifg=black           guibg=yellow   gui=none
+hi CursorLine   guibg=#131823
 hi ErrorMsg     guifg=white           guibg=red      gui=none
 hi VertSplit    guifg=gray40          guibg=gray40   gui=none
 hi Folded       guifg=grey            guibg=grey30   gui=none
@@ -58,12 +59,13 @@ endif
 hi Keyword      guifg=#CDA869
 hi Comment      guifg=#979DAC     gui=none
 hi Number       guifg=#A4C260
-hi Constant     guifg=#EEEEDD         gui=none
+hi Constant     guifg=white         gui=none
 hi Identifier   guifg=#EEEEDD
-hi Function     guifg=#EEEEDD           gui=none
+hi Function     guifg=white           gui=none
 hi Type         guifg=#EEEEDD           gui=none
 hi Statement    guifg=#CDA869 gui=none
-hi Delimiter    guifg=#997744
+hi Delimiter    guifg=#625224
+""hi Delimiter    guifg=#997744
 hi PreProc      guifg=lightgoldenrod2 gui=none
 hi Special      guifg=#CDA869         gui=none
 hi Character    guifg=#DDF2A4
@@ -71,11 +73,11 @@ hi Boolean      guifg=#AA88AA
 hi Ignore       guifg=grey40          gui=none
 hi Todo         guibg=#EEEE33 guifg=black gui=bold
 hi String       guifg=#8F9D6A
-"hi String       guifg=#A4C260
 hi SignColumn   guibg=#0B0804 gui=none
 hi ShowMarksHLl guifg=lightgoldenrod2 guibg=#151207
 
 hi link Operator Special
+hi link Tag Constant
 hi link Structure Special
 hi link StorageClass Special
 
@@ -101,9 +103,9 @@ hi WarningMsg   ctermfg=1
 hi WildMenu     ctermfg=0            ctermbg=3
 hi Folded       ctermfg=darkgrey     ctermbg=NONE
 hi FoldColumn   ctermfg=darkgrey     ctermbg=NONE
-hi DiffAdd      ctermbg=4
+hi DiffAdded    ctermbg=darkgreen ctermfg=black
+hi DiffRemoved  ctermbg=darkred ctermfg=white
 hi DiffChange   ctermbg=5
-hi DiffDelete   cterm=bold           ctermfg=4        ctermbg=6
 hi DiffText     cterm=bold           ctermbg=1
 hi Comment      ctermfg=darkcyan
 hi Constant     ctermfg=brown
@@ -118,22 +120,24 @@ hi Error        cterm=bold           ctermfg=7        ctermbg=1
 
 " Ruby
 "hi rubySymbol         guifg=#DDF2A4
-hi link rubySymbol Character
-hi link rubyConstant Normal
+"hi rubySymbol guifg=#99A9FF
+hi rubySymbol guifg=#FFEC8B
+hi rubyConstant guifg=#FFFFFF
+hi rubyKeywordArgument guifg=#FFFFFF
 
 
 " Rails
 hi link railsStringSpecial rubySymbol
 hi railsMethod guifg=#CDA869
-hi link railsClass Normal
+hi link railsClass Constant
 
 
 " HTML
-hi htmlTagName    guifg=#555577
+hi htmlTagName    guifg=#CCCCCC
 hi link htmlArg htmlTagName
 hi link htmlTag htmlTagName
 hi link htmlEndTag htmlTagName
-hi htmlLink gui=NONE
+hi link htmlLink Normal
 hi htmlH1       gui=bold
 
 
@@ -181,3 +185,9 @@ hi link yamlKey Special
 
 hi! LustySelected guibg=#2C4073 guifg=#ffffff
 hi! LustyCurrentBuffer guifg=#cccccc
+
+hi TargetFile guifg=black guibg=#B9B7B6 gui=bold
+
+
+" Gemfile
+hi link rubyGemfileMethod Keyword
