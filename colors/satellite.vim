@@ -29,8 +29,8 @@ hi NonText      guifg=cyan            gui=none
 hi Question     guifg=springgreen     gui=none
 hi Search       guifg=gray80          guibg=#445599  gui=none
 hi SpecialKey   guifg=cyan            gui=none
-hi StatusLine   guifg=white           guibg=#202030  gui=bold
-hi StatusLineNC guifg=white           guibg=#030813   gui=none
+hi StatusLine   guifg=white           guibg=#202030  gui=bold ctermfg=darkblue ctermbg=white
+hi StatusLineNC guifg=white           guibg=#030813   gui=none ctermfg=black
 hi TabLine      guibg=#261d13         guifg=#aaa  gui=underline,bold
 hi TabLineFill  guibg=#261d13         guifg=#aaa  gui=underline
 hi TabLineSel   guibg=bg              guifg=#f7f7f1  gui=bold
@@ -46,8 +46,8 @@ hi MatchParen   guifg=white           guibg=skyblue4 gui=bold
 hi ColorColumn                        guibg=#131823
 
 
-hi DiffAdded    guifg=#8F9D6A
-hi DiffRemoved  guifg=salmon
+hi DiffAdded    guifg=#8F9D6A ctermfg=green
+hi DiffRemoved  guifg=salmon ctermfg=red ctermbg=black
 
 if has("spell")
     hi SpellBad   guisp=#f07070 gui=undercurl
@@ -57,7 +57,7 @@ if has("spell")
 endif
 
 hi Keyword      guifg=#CDA869
-hi Comment      guifg=#979DAC     gui=none
+hi Comment      guifg=#738C73     gui=none
 hi Number       guifg=#A4C260
 hi Constant     guifg=white         gui=none
 hi Identifier   guifg=#EEEEDD
@@ -66,7 +66,7 @@ hi Type         guifg=#EEEEDD           gui=none
 hi Statement    guifg=#CDA869 gui=none
 hi Delimiter    guifg=#625224
 ""hi Delimiter    guifg=#997744
-hi PreProc      guifg=lightgoldenrod2 gui=none
+hi PreProc      guifg=#C2B470 gui=none
 hi Special      guifg=#CDA869         gui=none
 hi Character    guifg=#DDF2A4
 hi Boolean      guifg=#AA88AA
@@ -124,6 +124,7 @@ hi Error        cterm=bold           ctermfg=7        ctermbg=1
 hi rubySymbol guifg=#FFEC8B
 hi rubyConstant guifg=#FFFFFF
 hi rubyKeywordArgument guifg=#FFFFFF
+hi rubyOperator guifg=#DCDC9E
 
 
 " Rails
@@ -182,6 +183,7 @@ hi link lispKey  Special
 
 " YAML
 hi link yamlKey Special
+hi link yamlPlainScalar Comment
 
 hi! LustySelected guibg=#2C4073 guifg=#ffffff
 hi! LustyCurrentBuffer guifg=#cccccc
